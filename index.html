@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Case Converter Tool | Fikri</title>
+        <script
+            src="https://kit.fontawesome.com/de7be06a7c.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="style.css" />
+        <!-- <link rel="shortcut icon" href="./logo.ico" /> -->
+    </head>
+    <body onkeyup="start()">
+        <div id="header">
+            <div class="ctr">
+                <div class="hd_ct">
+                    <div class="hd_l">
+                        <a onClick="window.location.reload()" href="#">
+                            <!-- <img id="logo" src="./logoFull.png" alt="logo" /> -->
+                        </a>
+                    </div>
+                    <div class="hd_r">
+                        <ul class="nav">
+                            <li>
+                                <a href="#">Case Converter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="convert">
+            <div class="stp">
+                <div class="ctr">
+                    <div class="banner">
+                        <div class="bb">Fikri Aminuddin</div>
+                        <div class="hd">
+                            <h1>Case Converter Tool</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ctr">
+                <div class="main">
+                    <div class="box">
+                        <div class="box1">
+                            <ul id="char" class="char">
+                                <li>
+                                    <span>Characters: </span>
+                                    <span id="letters" class="tot">0</span>
+                                </li>
+                                <li>
+                                    <span>Words: </span>
+                                    <span id="words" class="tot">0</span>
+                                </li>
+                                <li>
+                                    <span>Paragraph: </span>
+                                    <span id="lines" class="tot">0</span>
+                                </li>
+                            </ul>
+
+                            <div class="txt">
+                                <textarea
+                                    maxlength="10000"
+                                    name="txt"
+                                    id="txt"
+                                    cols="100"
+                                    rows="10"
+                                    placeholder="Enter your text here..."
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="box2">
+                            <span class="box_txt">Change your text to</span>
+
+                            <div id="menu" class="menu">
+                                <button class="uc" id="uc">UPPERCASE</button>
+                                <button class="lc" id="lc">lowercase</button>
+                                <button class="tc" id="tc">Title Case</button>
+                                <button class="sc" id="sc">Sentence case</button>
+                                <button class="cc" id="cc">Capitalized Case</button>
+                                <button class="ac" id="ac">aLtErNaTiNg cAsE</button>
+                                <button class="ic" id="ic">InVeRsE CaSe</button>
+                                <button class="copy" id="copy">Copy To Clipboard</button>
+                                <button class="download" id="download">Download Text</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c_ct">
+                        <h2>
+                            Welcome to
+                            <strong>case converter online tool</strong>
+                        </h2>
+
+                        <p>
+                            Welcome to our case converter online tool, an
+                            effective and efficient solution to transform your
+                            text into various case formats. Whether you need to
+                            change your text to uppercase, lowercase, title
+                            case, sentence case, capitalized case, alternating
+                            case, or even inverse case, our tool can handle it
+                            all. Simply input your text, select your desired
+                            case, and our tool will do the rest.
+                        </p>
+                        <p>
+                            Our case converter online tool is perfect for
+                            writers, editors, and anyone who needs to format
+                            text quickly and accurately. With our user-friendly
+                            interface, you can easily transform your text and
+                            copy it to your clipboard or download it as a text
+                            file. Say goodbye to manual text formatting and let
+                            our tool do the work for you. Try it today and
+                            experience the convenience and efficiency of our
+                            case converter online tool!
+                        </p>
+
+                        <h2>How to use the case converter online tool</h2>
+                        <p>
+                            To use our case converter online tool, simply follow
+                            these steps:
+                        </p>
+                        <ol>
+                            <li>Enter your text into the input box.</li>
+                            <li>Select the case format you want to apply.</li>
+                            <li>
+                                Your text will be instantly transformed into the
+                                selected case.
+                            </li>
+                            <li>
+                                Copy the converted text to your clipboard or
+                                download it as a text file.
+                            </li>
+                        </ol>
+
+                        <br>
+                        <h2>Features</h2>
+                        <ul>
+                            <li>
+                                <strong>Uppercase:</strong> Transform your text
+                                to all uppercase letters.
+                            </li>
+                            <li>
+                                <strong>Lowercase:</strong> Transform your text
+                                to all lowercase letters.
+                            </li>
+                            <li>
+                                <strong>Title Case:</strong> Capitalize the
+                                first letter of each word in your text.
+                            </li>
+                            <li>
+                                <strong>Sentence case:</strong> Capitalize the
+                                first letter of each sentence in your text.
+                            </li>
+                            <li>
+                                <strong>Capitalized Case:</strong> Capitalize
+                                the first letter of each word and lowercase the
+                                remaining letters.
+                            </li>
+                            <li>
+                                <strong>Alternating Case:</strong> Alternate
+                                between uppercase and lowercase letters in your
+                                text.
+                            </li>
+                            <li>
+                                <strong>Inverse Case:</strong> Invert the case
+                                of each letter in your text.
+                            </li>
+                        </ul>
+
+                        <br>
+                        <h2>Benefits</h2>
+                        <ul>
+                            <li>
+                                <strong>Save time:</strong> Instantly transform
+                                your text without manually changing each letter.
+                            </li>
+                            <li>
+                                <strong>Improve accuracy:</strong> Ensure your
+                                text is formatted correctly and consistently.
+                            </li>
+                            <li>
+                                <strong>Easy to use:</strong> User-friendly
+                                interface makes it simple to convert your text.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="ctr">
+                <div class="ft_ct">
+                    <div class="ft_l">
+                        <ul class="links">
+                            <li>
+                                <a onClick="window.location.reload()" href="#"
+                                    >Privacy Policy <span> | </span></a
+                                >
+                            </li>
+                            <li>
+                                <a onClick="window.location.reload()" href="#"
+                                    >Coolies Policy <span> | </span></a
+                                >
+                            </li>
+                            <li>
+                                <a onClick="window.location.reload()" href="#"
+                                    >Sitemap</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ft_r">
+                        <div class="copy-right">
+                            <i class="fa-regular fa-copyright"></i>
+                            <a
+                                target="_blank"
+                                href="https://github.com/FikriAminuddin"
+                                >Fikri Aminuddin</a
+                            >
+                            | Case Converter Tool
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
